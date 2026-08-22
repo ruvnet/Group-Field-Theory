@@ -1,0 +1,3 @@
+# The generated remote MCP launcher is intentionally disabled.
+# It referenced a mutable latest tag and an MCP command that this package does not implement.
+# Use the reviewed local CLI through npm run doctor, npm run benchmark, and npm run optimize.

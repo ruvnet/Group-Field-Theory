@@ -90,3 +90,20 @@ The largest risk is category error: a computational analogy can demonstrate logi
 
 See [docs/references.md](docs/references.md) for the complete research ledger.
 
+## MetaHarness benchmark
+
+The repository includes a generated, repository specific research harness in [`harness/`](harness/README.md). It uses the latest verified MetaHarness package releases available on 2026-08-21, pinned exactly for reproducibility.
+
+The release benchmark evaluates six graph families across forty independent projection seeds each. All 240 comparisons must preserve graph distance, connectivity, diameter, mean degree, spectral dimension, relational ordering, and the relation fingerprint. A coordinate substitution mutant must be rejected in all 240 trials.
+
+```bash
+npm ci
+npm run validate
+npm run optimize
+```
+
+The optimized adjacency index reduced deterministic graph work by 98.1 percent in the recorded run while preserving a 100 percent invariant pass rate, 100 percent mutation kill rate, 100 percent frozen truth rate, and valid hash chained receipts. Wall clock improvements are reported but are not used for promotion because shared runner timing is noisy.
+
+See [ADR 001](docs/adrs/ADR-001-metaharness-benchmark.md) for the architecture, trust boundaries, rejected alternatives, and residual scientific risk.
+
+The complete measured results, package provenance, scorecard change, and security evidence are in the [MetaHarness benchmark report](docs/06_metaharness_benchmark.md).

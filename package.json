@@ -1,0 +1,19 @@
+{
+  "name": "group-field-theory-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "harness"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace group-field-theory-harness",
+    "test": "npm run test --workspace group-field-theory-harness",
+    "benchmark": "npm run benchmark --workspace group-field-theory-harness",
+    "optimize": "npm run optimize --workspace group-field-theory-harness",
+    "validate": "npm run validate --workspace group-field-theory-harness"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

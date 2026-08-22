@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "corpus": "gft-projection-invariance-v1",
+  "baselineEngine": "naive",
+  "candidateEngine": "indexed",
+  "evidence": {
+    "baseline": {
+      "primary": 1,
+      "noopRate": 0.9811488655400393,
+      "costPerWin": 3942586.9916666667,
+      "regressed": false
+    },
+    "candidate": {
+      "primary": 1,
+      "noopRate": 0,
+      "costPerWin": 74322.2375,
+      "regressed": false
+    },
+    "anchor": {
+      "baseline": 1,
+      "candidate": 1
+    }
+  },
+  "decision": {
+    "promote": true,
+    "reasons": []
+  },
+  "gateFingerprint": "b730019b67f5c0dd1aacb8674ce46933be9ff91c499eea87875fff3d0372e36d",
+  "deterministicWorkReduction": 0.9811488655400393,
+  "observedP50LatencyReduction": 0.7735180412371134,
+  "baseline": {
+    "engine": "naive",
+    "projectionSeeds": 40,
+    "invariantPassRate": 1,
+    "mutationKillRate": 1,
+    "anchorTruthRate": 1,
+    "receiptChainVerified": true,
+    "p50LatencyMs": 6.208,
+    "p95LatencyMs": 79.033,
+    "edgeInspectionsPerPass": 3942586.9916666667,
+    "redundantWorkRate": 0.9811488655400393
+  },
+  "candidate": {
+    "engine": "indexed",
+    "projectionSeeds": 40,
+    "invariantPassRate": 1,
+    "mutationKillRate": 1,
+    "anchorTruthRate": 1,
+    "receiptChainVerified": true,
+    "p50LatencyMs": 1.406,
+    "p95LatencyMs": 10.196,
+    "edgeInspectionsPerPass": 74322.2375,
+    "redundantWorkRate": 0
+  },
+  "generatedAt": "2026-08-22T01:40:05.728Z"
+}

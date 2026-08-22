@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "gft-projection-invariance-v1",
+  "description": "Coordinate free graph families used to test whether relational observables survive arbitrary screen projections.",
+  "projectionSeeds": 40,
+  "families": [
+    "chain-64",
+    "cycle-64",
+    "grid-8x8",
+    "star-64",
+    "bridged-clusters-64",
+    "seeded-sparse-128"
+  ],
+  "required": {
+    "invariantPassRate": 1,
+    "mutationKillRate": 1,
+    "receiptChainVerified": true,
+    "anchorTruthRate": 1
+  }
+}

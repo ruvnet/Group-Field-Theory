@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "generator": "metaharness@0.4.7+reviewed-local",
+  "template": "vertical:research",
+  "template_version": "0.4.7",
+  "vars": {
+    "name": "group-field-theory-harness",
+    "description": "My AI agent harness",
+    "host": "codex"
+  },
+  "hosts": [
+    "codex"
+  ],
+  "files": {
+    ".claude/skills/evolve/SKILL.md": "ed621a3563acfa85a5f3a160b18ecc361e553312a22d3c3ab5ef1747ce123758",
+    ".codex/config.toml": "dfb3444af81d9a65c7fe7904e253025c0b7c62d30f856334ef12fb05d82ac236",
+    "AGENTS.md": "35a7ae6f7b93cc88fb4774b5925ff6fa4d053b4d2e755eaac0cbcc7f46e543e2",
+    "CLAUDE.md": "d7007ab36a5f9fc7ef2033e7f92d54244e5a1e7993505bcbdd56bcb43779e59a",
+    "LICENSE": "5c81f44bf84ad350c5eafdb5a3489d3eb0a0624782bc9ca940b2b11786b851e4",
+    "README.md": "34cd36b1f3602afa1657434fd517e11e70b570a9e5dc534512e638ce2ada5e77",
+    "__tests__/invariants.test.ts": "6cf5d6a41a2ecd2c4cce7483510a633b7629556bb76315a3aec084c5987fc5f6",
+    "__tests__/optimizer.test.ts": "14e97e03d824eb88d1d97b75981b0aa05859df2bfb32b1a29a32b6daa070c64f",
+    "__tests__/smoke.test.ts": "61f567b6061e9b231966fb0fdab99c948150500dea4cc7c131c95ff0855ea606",
+    "bench/corpus.json": "dbbd65f57277b271a3a74d0342e5731d5b222f7634da13203f54e8df0b2aa515",
+    "bench/results/latest.json": "6f9a859625eb4f53f5ad1a562826338867a02f63c684b0cf4b448b9ece9cfd83",
+    "bench/results/optimized-policy.json": "3c9a256b29efa0261794204f8688e8351753cb3363ba5b1637d8c034ddcf3582",
+    "bin/cli.js": "6f45970a162ab0a4b01f3fbd6e4d1f776b4c0b243fff77e163bee80d1c66203d",
+    "package.json": "7c7c035657ae7e3c49d7a31192dc3ab7cbe5d9b9f970ca4059879a1e6fc9bba6",
+    "scripts/manifest.mjs": "931c3be8978ce95dd278d42657d46b8bd364a16fbf961dee8ba80036667b2288",
+    "src/agents/citer.ts": "e52b43596c185c61c13fa9bff8ccff535dd3e9e20aac8141d7149d44325dcb88",
+    "src/agents/fact-checker.ts": "95f845c31c173f3b95a33496a63708f5cd743af3ccbd8df3794a88e08736bbaa",
+    "src/agents/scout.ts": "deda7ae0abd307b39bc60b4e8a0278e4a2aafb955ca7f11f0048dbeda65bec61",
+    "src/agents/source-grader.ts": "cfcb7cfc36337b3222284badb2dd2c88374ff21dec286adeedbdc537e7ce5f6d",
+    "src/agents/synthesizer.ts": "3270bc8392c72cd3b50e18ce6c5e6b471656385228273e254b3c5ca1d9b98a71",
+    "src/agents/web-searcher.ts": "c12486ff74018c19452a87ce3e9edbda8bed6820367cca99bcd1755f4938fe2e",
+    "src/benchmark.ts": "2ead6d9b25fd1c75146624e1f800341c70d28fc75743fa1d8e1b0dd5ccf0ca8f",
+    "src/domain/corpus.ts": "c93cc7eea2b3ea2ba34715e5ca95d827a0918edde30b51f2db7c824c9f4f7d10",
+    "src/domain/graph.ts": "4e2f432107db6d26eeef7f6b7139edfa94f29c0af1d0f00e5271bec1b4743b04",
+    "src/domain/runner.ts": "42bcf474c7e3b6acc17371dec367ed46dbc318c4fd2fa0d59529c396043bae4d",
+    "src/domain/types.ts": "5d0c8e1e184914349608a57b3836c0bdaabac214bb6c847d087db1e506b610cd",
+    "src/init.ts": "2ac773939694eda0f97dfd0350944dfb34843fb6e177ad3a2890d115a59625b6",
+    "src/optimize.ts": "459b9a9c81b30f3a0654db10e12dd5abcd8a89b6ad42387045ccdb314d8afa9e",
+    "tsconfig.json": "8b4e730a1aa39162ac574455d7a98e1881f5313ca80ffe503b9652dcf0c76b9d",
+    "vitest.config.ts": "e9e94875611ab1cd602c1f6923902c2dab7953a75ac022962973639d1937587a"
+  },
+  "generated_at": "2026-08-22T01:42:00.070Z",
+  "meta": {
+    "surface": "cli",
+    "kernel_version": "0.1.3",
+    "benchmark": "gft-projection-invariance-v1",
+    "attestation": "reviewed local source and benchmark artifacts"
+  }
+}
