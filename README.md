@@ -107,3 +107,14 @@ The optimized adjacency index reduced deterministic graph work by 98.1 percent i
 See [ADR 001](docs/adrs/ADR-001-metaharness-benchmark.md) for the architecture, trust boundaries, rejected alternatives, and residual scientific risk.
 
 The complete measured results, package provenance, scorecard change, and security evidence are in the [MetaHarness benchmark report](docs/06_metaharness_benchmark.md).
+
+## Architecture decisions
+
+The repository records consequential design choices under [`docs/adrs/`](docs/adrs/):
+
+1. [ADR 001](docs/adrs/ADR-001-metaharness-benchmark.md) accepts the evidence governed MetaHarness benchmark.
+2. [ADR 002](docs/adrs/ADR-002-integration-boundary.md) protects the coordinate free kernel from downstream spatial and sensor schemas.
+3. [ADR 003](docs/adrs/ADR-003-worldgraph-derived-projection.md) proposes a bounded WorldGraph audit projection spike.
+4. [ADR 004](docs/adrs/ADR-004-rufield-evidence-envelope.md) proposes a RuField external evidence boundary spike.
+
+The integration conclusion is deliberately narrow. WorldGraph may add value as an inspectable projection of already derived beliefs. RuField may add value when signed laboratory or observational evidence enters the system. Neither is approved as a primitive state model, and neither strengthens the underlying physics claim by itself.
