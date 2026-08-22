@@ -1,0 +1,63 @@
+{
+  "name": "group-field-theory-harness",
+  "version": "0.1.0",
+  "description": "Evidence governed research and invariant benchmark harness for emergent spacetime experiments",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "group-field-theory-harness": "bin/cli.js"
+  },
+  "files": [
+    "bin/**",
+    "bench/**",
+    "dist/**",
+    "src/**",
+    "scripts/**",
+    "tsconfig.json",
+    ".harness/**",
+    ".codex/**",
+    ".claude/**",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "init": "node ./bin/cli.js init",
+    "doctor": "node ./bin/cli.js doctor",
+    "benchmark": "npm run build && node dist/benchmark.js",
+    "benchmark:write": "npm run build && node dist/benchmark.js --write",
+    "optimize": "npm run build && node dist/optimize.js --write",
+    "manifest:refresh": "node scripts/manifest.mjs --write",
+    "manifest:check": "node scripts/manifest.mjs --check",
+    "validate": "npm run manifest:check && npm run build && npm test && node dist/benchmark.js --strict",
+    "evolve": "metaharness-darwin evolve . --sandbox real --generations 3 --children 4",
+    "evolve:dry": "metaharness-darwin evolve . --sandbox mock --generations 2 --children 3"
+  },
+  "dependencies": {
+    "@metaharness/flywheel": "0.1.10",
+    "@metaharness/harness": "0.2.0",
+    "@metaharness/host-codex": "0.1.2",
+    "@metaharness/kernel": "0.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7",
+    "@metaharness/darwin": "0.9.3"
+  },
+  "keywords": [
+    "research",
+    "dossier",
+    "fact-checking",
+    "agent-harness"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

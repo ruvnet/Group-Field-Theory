@@ -1,0 +1,33 @@
+{
+  "name": "group-field-theory-harness",
+  "hosts": [
+    "claude-code"
+  ],
+  "template": "vertical:research",
+  "archetypeId": "research-harness",
+  "confidence": 0.13,
+  "engine": "lexical",
+  "agents": [
+    "scout",
+    "synthesizer",
+    "fact-checker",
+    "citer"
+  ],
+  "skills": [],
+  "commands": [
+    "doctor"
+  ],
+  "mcp": "local",
+  "policy": {
+    "defaultDeny": true,
+    "allowNetwork": false,
+    "allowShell": false,
+    "allowFileWrite": false,
+    "requireApprovalForDangerous": true,
+    "toolTimeoutMs": 30000,
+    "maxToolCallsPerTurn": 8,
+    "auditLog": true
+  },
+  "riskProfile": "shell gated, network gated, file-write read-scoped",
+  "suggestedCommands": []
+}
